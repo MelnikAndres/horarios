@@ -111,6 +111,11 @@ getHorarios(db).then((horariosDisp) => {
     newcontent += '</div>'
     disponibles.innerHTML += newcontent
   }
+  let cargados = ''
+  for(let i=0;i<horariosDisp.length;i++){
+    cargados += horariosDisp[i].nombre + '<br>'
+  }
+  document.getElementById('cargados').innerHTML += cargados
 })
 
 
