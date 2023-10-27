@@ -1,0 +1,50 @@
+body{
+    display: grid;
+    place-content: center;
+}
+.dia{
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 250px;
+    max-width: 350px;
+}
+h2{
+    width: 100%;
+}
+.hora{
+    padding: 8px;
+    width: 100px;
+}
+.possible{
+    display: inline-block;
+    background-color: green;
+    height: 16px;
+    width: 16px;
+    border-radius: 50px;
+    transform: translate(0, 2px);
+}
+.selected{
+    background-color: red !important;
+}
+
+.no-button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 2px;
+}
+
+.no-button:hover{
+    background-color: lightcoral;
+}
+
+button{
+    cursor: pointer;
+}
+button[id="btn-subir"]{
+    padding: 4px;
+}
+
+input[type="text"]{
+    padding: 4px;
+}
